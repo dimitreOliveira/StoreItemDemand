@@ -1,4 +1,4 @@
-![](https://kaggle2.blob.core.windows.net/competitions/kaggle/9999/logos/header.png?t=2018-06-28-21-19-41)
+![](https://s9783.pcdn.co/wp-content/uploads/2018/03/Blog-Optimize-Store-Replenishment.jpg)
 
 # Deep Learning regression with Keras and Spark
 
