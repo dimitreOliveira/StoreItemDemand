@@ -1,18 +1,18 @@
-![](https://kaggle2.blob.core.windows.net/competitions/kaggle/3333/media/border_collies.png)
+![](https://kaggle2.blob.core.windows.net/competitions/kaggle/9999/logos/header.png?t=2018-06-28-21-19-41)
 
-# Deep Learning image classification with Keras
+# Deep Learning regression with Keras and Spark
 
-### Dog Breed Identification: Determine the breed of a dog in an image
+### Store Item Demand Forecasting Challenge
 
-link for the kaggle competition: https://www.kaggle.com/c/dog-breed-identification
+link for the kaggle competition: https://www.kaggle.com/c/demand-forecasting-kernels-only
 
-datasets: https://www.kaggle.com/c/dog-breed-identification/data
+datasets: https://www.kaggle.com/c/demand-forecasting-kernels-only/data
 
 ### Overview
-Who's a good dog? Who likes ear scratches? Well, it seems those fancy deep neural networks don't have all the answers. However, maybe they can answer that ubiquitous question we all ask when meeting a four-legged stranger: what kind of good pup is that?
+This competition is provided as a way to explore different time series techniques on a relatively simple and clean dataset.
 
-In this playground competition, you are provided a strictly canine subset of ImageNet in order to practice fine-grained image categorization. How well you can tell your Norfolk Terriers from your Norwich Terriers? With 120 breeds of dogs and a limited number training images per class, you might find the problem more, err, ruff than you anticipated.
+You are given 5 years of store-item sales data, and asked to predict 3 months of sales for 50 different items at 10 different stores.
 
-### Acknowledgments
-We extend our gratitude to the creators of the Stanford Dogs Dataset for making this competition possible: Aditya Khosla, Nityananda Jayadevaprakash, Bangpeng Yao, and Fei-Fei Li.
-# StoreItemDemand
+What's the best way to deal with seasonality? Should stores be modeled separately, or can you pool them together? Does deep learning work better than ARIMA? Can either beat xgboost?
+
+This is a great competition to explore different models and improve your skills in forecasting.
