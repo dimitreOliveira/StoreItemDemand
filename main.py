@@ -6,16 +6,22 @@ from keras import optimizers
 from sklearn.preprocessing import MinMaxScaler
 
 
-def prepare_data(data):
-    list_result = []
-    for i in range(len(data)):
-        list_result.append(np.asarray(data[i]))
-    return np.asarray(list_result)
-
-
-def build_series(df, serie_size=30):
+def build_series(df, serie_size=3):
     for i in range(serie_size):
-        df['t%s' % i] = df['id'].shift(i)
+        for column in df.columns:
+            df['%s%s' % (column, i)] = df[column].shift(i)
+
+
+def prepare_data(df, serie_size=3):
+    columns = ['store', 'item', 'day', 'month', 'year', 'weekday', 'weekend', 'monthbegin', 'monthend', 'yearquarter', 'filled_serie', 'rank']
+    list_result = []
+    for row in range(df.shape[0]):
+        row_array = []
+        for column in columns:
+            for time in range(serie_size):
+                row_array.append(df[column+'%s' % time].values)
+        list_result.append(np.asarray(row_array))
+    return np.asarray(list_result)
 
 
 train = pd.read_csv('data/db/train.csv').drop(['date', 'dateFormated'], axis=1)
@@ -37,8 +43,11 @@ train = train.dropna()
 validation = validation.dropna()
 
 
-train = train.iloc[:, (train.shape[1]-30):train.shape[1]].values
-validation = validation.iloc[:, (validation.shape[1]-30):validation.shape[1]].values
+train = prepare_data(train)
+validation = prepare_data(validation)
+
+# train = train.iloc[:, (train.shape[1]-30):train.shape[1]].values
+# validation = validation.iloc[:, (validation.shape[1]-30):validation.shape[1]].values
 
 
 scaler = MinMaxScaler()
@@ -47,13 +56,14 @@ train_x = scaler.transform(train)
 validation_x = scaler.transform(validation)
 test_normalized = scaler.transform(test)
 
-shape = train_x.shape[1]
 serie_size = len(train_x[0])
-n_features = len(train_x[0][0])
+n_features = 1
 
 model = Sequential()
-model.add(GRU(32, return_sequences= input_shape=(serie_size, n_features)))
-model.add(Dropout(0.5))
+model.add(GRU(32, recurrent_dropout=0.1, return_sequences=True, input_shape=(serie_size, n_features)))
+model.add(Dropout(0.3))
+model.add(GRU(32, recurrent_dropout=0.1, input_shape=(serie_size, n_features)))
+model.add(Dropout(0.3))
 model.add(Dense(64, kernel_initializer='glorot_normal', activation='relu'))
 model.add(Dense(1))
 
