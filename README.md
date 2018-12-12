@@ -2,6 +2,17 @@
 
 # Deep Learning regression with Keras and Spark
 
+## About the repository
+The main goal of this reposiroy is to use the Spark structure from Databricks clusters, load and process data from the Kaggle competition and train deep learning models distributed.
+
+### What you will find
+* Brief EDA of the data set. [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Analysis/EDA.ipynb)
+* Creation and usage of custom spark pipelines. [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/custom_transformers.ipynb)
+* Data preparation. [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/prepare%20data.ipynb)
+* Model training. [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Model/train.ipynb)
+* Model prediction (test set). [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Model/test.ipynb)
+* Model evaluation (evaluation of many different models. [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Model/model%20evaluation.ipynb)
+
 ### Store Item Demand Forecasting Challenge
 
 link for the kaggle competition: https://www.kaggle.com/c/demand-forecasting-kernels-only
@@ -16,3 +27,18 @@ You are given 5 years of store-item sales data, and asked to predict 3 months of
 What's the best way to deal with seasonality? Should stores be modeled separately, or can you pool them together? Does deep learning work better than ARIMA? Can either beat xgboost?
 
 This is a great competition to explore different models and improve your skills in forecasting.
+
+### Dependencies:
+* [json](https://docs.python.org/2/library/json.html)
+* [keras](https://keras.io/)
+* [numpy](http://www.numpy.org/)
+* [pandas](http://pandas.pydata.org/)
+* [sklearn](https://scikit-learn.org/stable/)
+* [matplotlib](http://matplotlib.org/)
+* [pyspark.ml](http://spark.apache.org/docs/2.2.0/api/python/pyspark.ml.html)
+* [pyspark.sql](http://spark.apache.org/docs/2.1.0/api/python/pyspark.sql.html)
+
+### To-Do:
+* Persistence of the pipeline classes needs to be fixed.
+* Pipeline classes needs revised.
+* The data probably needs more feature extraction.
