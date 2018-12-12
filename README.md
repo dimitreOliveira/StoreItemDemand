@@ -3,19 +3,19 @@
 # Deep Learning regression with Keras and Spark
 
 ## About the repository
-The main goal of this reposiroy is to use the Spark structure from Databricks clusters, load and process data from the Kaggle competition and train deep learning models distributed.
+The main goal of this repository is to use the Spark structure from [Databricks](https://databricks.com/) clusters, load and process data from the Kaggle competition and train deep learning models distributed.
 
 ### What you will find
-* Brief EDA of the data set. [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Analysis/EDA.ipynb)
-* Creation and usage of custom spark pipelines. [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/custom_transformers.ipynb)
-* Data preparation. [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/prepare%20data.ipynb)
-* Model training. [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Model/train.ipynb)
-* Model prediction (test set). [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Model/test.ipynb)
-* Model evaluation (evaluation of many different models. [link](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Model/model%20evaluation.ipynb)
+* Brief EDA of the data set. [[link]](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Analysis/EDA.ipynb)
+* Creation and usage of custom spark pipelines. [[link]](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/custom_transformers.ipynb)
+* Data preparation. [[link]](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/prepare%20data.ipynb)
+* Model training. [[link]](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Model/train.ipynb)
+* Model prediction (test set). [[link]](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Model/test.ipynb)
+* Model evaluation (evaluation of many different models. [[link]](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Model/model%20evaluation.ipynb)
 
 ### Store Item Demand Forecasting Challenge
 
-link for the kaggle competition: https://www.kaggle.com/c/demand-forecasting-kernels-only
+link for the Kaggle competition: https://www.kaggle.com/c/demand-forecasting-kernels-only
 
 datasets: https://www.kaggle.com/c/demand-forecasting-kernels-only/data
 
