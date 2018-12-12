@@ -3,7 +3,9 @@
 # Deep Learning regression with Keras and Spark
 
 ## About the repository
-The main goal of this repository is to use the Spark structure from [Databricks](https://databricks.com/) clusters, load and process data from the Kaggle competition and train deep learning models distributed.
+The Spark folder of this repository was written using Databricks if you want to replicate or continue the work you can checkout the free version [Databrick community](https://community.cloud.databricks.com/login.html).
+
+The main goal of the repository is to use the Spark structure from [Databricks](https://databricks.com/) clusters, load and process data from the Kaggle competition and train deep learning models distributed.
 
 ### What you will find
 * Brief EDA of the data set. [[link]](https://github.com/dimitreOliveira/StoreItemDemand/blob/master/Spark/Analysis/EDA.ipynb)
