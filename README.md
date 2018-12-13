@@ -31,7 +31,6 @@ What's the best way to deal with seasonality? Should stores be modeled separatel
 This is a great competition to explore different models and improve your skills in forecasting.
 
 ### Dependencies:
-* [json](https://docs.python.org/2/library/json.html)
 * [keras](https://keras.io/)
 * [numpy](http://www.numpy.org/)
 * [pandas](http://pandas.pydata.org/)
