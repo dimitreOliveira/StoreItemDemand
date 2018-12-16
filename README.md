@@ -30,14 +30,16 @@ What's the best way to deal with seasonality? Should stores be modeled separatel
 
 This is a great competition to explore different models and improve your skills in forecasting.
 
-### Dependencies:
+### PySpark Dependencies:
+* [pyspark.ml](http://spark.apache.org/docs/2.2.0/api/python/pyspark.ml.html)
+* [pyspark.sql](http://spark.apache.org/docs/2.1.0/api/python/pyspark.sql.html)
+
+### Python Dependencies:
 * [keras](https://keras.io/)
 * [numpy](http://www.numpy.org/)
 * [pandas](http://pandas.pydata.org/)
 * [sklearn](https://scikit-learn.org/stable/)
 * [matplotlib](http://matplotlib.org/)
-* [pyspark.ml](http://spark.apache.org/docs/2.2.0/api/python/pyspark.ml.html)
-* [pyspark.sql](http://spark.apache.org/docs/2.1.0/api/python/pyspark.sql.html)
 
 ### To-Do:
 * Persistence of the pipeline classes needs to be fixed.
