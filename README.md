@@ -31,8 +31,8 @@ What's the best way to deal with seasonality? Should stores be modeled separatel
 This is a great competition to explore different models and improve your skills in forecasting.
 
 ### PySpark Dependencies:
-* [pyspark.ml](http://spark.apache.org/docs/2.2.0/api/python/pyspark.ml.html)
-* [pyspark.sql](http://spark.apache.org/docs/2.1.0/api/python/pyspark.sql.html)
+* [PySpark.ml](http://spark.apache.org/docs/2.2.0/api/python/pyspark.ml.html)
+* [PySpark.sql](http://spark.apache.org/docs/2.1.0/api/python/pyspark.sql.html)
 
 ### Python Dependencies:
 * [Keras](https://keras.io/)
