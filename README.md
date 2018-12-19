@@ -35,11 +35,11 @@ This is a great competition to explore different models and improve your skills 
 * [pyspark.sql](http://spark.apache.org/docs/2.1.0/api/python/pyspark.sql.html)
 
 ### Python Dependencies:
-* [keras](https://keras.io/)
-* [numpy](http://www.numpy.org/)
-* [pandas](http://pandas.pydata.org/)
-* [sklearn](https://scikit-learn.org/stable/)
-* [matplotlib](http://matplotlib.org/)
+* [Keras](https://keras.io/)
+* [NumPy](http://www.numpy.org/)
+* [Pandas](http://pandas.pydata.org/)
+* [SkLearn](https://scikit-learn.org/stable/)
+* [Matplotlib](http://matplotlib.org/)
 
 ### To-Do:
 * Persistence of the pipeline classes needs to be fixed.
